@@ -1,24 +1,170 @@
 <html>
 
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>AUTOCLICK</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
-
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-secondary">Secondary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-light">Light</button>
-  <button type="button" class="btn btn-dark">Dark</button>
+  <div id="wrapper">
+    <div class="banner-wrapper">
+      <header>
+        <div class="inner">
+          <ul>
+          <li>
+            <form class="example" action="#">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." name="search">
+          </form>
+          </li>
+        <li>
+          <a href="#" id="btn_miCuenta">
+          <button type="button">Mi cuenta</button>
+        </a>
+        </li>
+          </ul>
 
-  <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <div class="header-inner">
+          <a href="index.html" id="logo">
+            <img src="img/pics/Calibri_en_su_carro.png"alt="autoclick.com">
+          </a>
+          <div class="header-inner">
+            <nav>
+              <a href="a" id="menu-icon">
+                <i class="fa fa-bars"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                  <a href="#skills">Blog</a>
+                </li>
+                <li>
+                  <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                  <a href="#categories">Categorias</a>
+                </li>
+                <li>
+                  <a href="#promos">Promociones</a>
+                </li>
+                <li>
+                  <a href="#" id="carrito">
+                   <i class="fa fa-shopping-cart"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="slide-wrap">
+        <ul class="slider1">
+          <li><img src="img/slider/slider1.jpg"alt="slider1"></li>
+          <li><img src="img/slider/slider2.jpg"alt="slider2"></li>
+          <li><img src="img/slider/slider3.jpg"alt="slider3"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section class="one-third" id="skills">
+    <div class="icon-wrap">
+      <i class="fa fa-money"></i>
+    </div>
+    <h3>Promociones</h3>
+    <p>Promociones</p>
+  </section>
+  <section class="one-third" id="products">
+    <div class="icon-wrap">
+      <i class="fa fa-star"></i>
+    </div>
+    <h3>Productos mas vendidos</h3>
+    <p>Mas vendidos</p>
+  </section>
+  <section class="one-third" id="promos">
+    <div class="icon-wrap">
+      <i class="fa fa-tag"></i>
+    </div>
+    <h3>Ofertas</h3>
+    <p>Ofertas</p>
+  </section>
+  <div class="clearfix-padding"></div>
+
+  <div class="one-third-padding" id="categories">
+    <h3></h3>
+  </div>
+  <div class="clearfix-padding"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="banner-wrapper">
+      <div class="icon-text">
+        <div class="icon-text-icon">
+          <ul class="footer-nav">
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Productos</a>
+            </li>
+            <li>
+              <a href="#">Categorias</a>
+            </li>
+            <li>
+              <a href="#">Promociones</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icon-text-text">
+          <ul class="social">
+            <li>
+              <a href="info@autoclick.com" target="_blank">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://facebook.com/AUTOCLICK" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram" target="_blank"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="second-footer">
+    <p>
+      &copy; <a href=#>EQUIPO 2</a>
+    </p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+      $(document).ready(function(){
+          $('.slider1').bxSlider({
+              mode: 'fade',
+          });
+          $('.slider2').bxSlider({
+              mode: 'fade',
+          });
+          $('.slider3').bxSlider({
+              mode: 'fade',
+          });
+      });
+  </script>
 </body>
 
 </html>
