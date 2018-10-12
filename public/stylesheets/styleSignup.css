@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("road.jpg") ;
+    background-size: cover;
+    font-family: "Arial Narrow";
+}
+.singingbox{
+    width: 520px;
+    height: 620px;
+    background: #24824a;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.singingbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+.singingbox input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.singingbox input[type="text"], input[type="password"], input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+
+}
+.singingbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #17502d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.singingbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: white;
+    color: #000000;
+}
