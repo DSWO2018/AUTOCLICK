@@ -1,7 +1,7 @@
 var mongoose = require('../node_modules/mongoose');
 var Schema = mongoose.Schema;
 
-// marca y stock
+
 var schema = new Schema({
     imagePath:{type:String, required:true},
     mark:{type:String, required:true},
