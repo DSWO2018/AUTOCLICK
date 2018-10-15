@@ -45,7 +45,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 25
         }),
         new Product({
-            imagePath: "img/products/aleron1.jpg",
+            imagePath: "public/img/products/aleron1.jpg",
             mark: 'Patito Cuack',
             stock: 6,
             title: 'Aleron deportivo',
@@ -53,7 +53,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 350
         }),
         new Product({
-            imagePath: "img/products/calavera1jpg",
+            imagePath: "public/img/products/calavera1jpg",
             mark: 'Don Julian',
             stock: 10,
             title: 'Calavera standart',
@@ -61,7 +61,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 120
         }),
         new Product({
-            imagePath: "img/products/calavera2.jpg",
+            imagePath: "public/img/products/calavera2.jpg",
             mark: 'Ford',
             stock: 23,
             title: 'Calavera ford',
@@ -69,7 +69,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 200
         }),
         new Product({
-            imagePath: "img/products/faros1.jpg",
+            imagePath: "public/img/products/faros1.jpg",
             mark: 'Tepito',
             stock: 2,
             title: 'Faros Normales',
@@ -77,7 +77,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 310
         }),
         new Product({
-            imagePath: "img/products/focos1.jpg",
+            imagePath: "public/img/products/focos1.jpg",
             mark: 'Osun',
             stock: 100,
             title: 'Focos Led',
@@ -85,7 +85,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 125
         }),
         new Product({
-            imagePath: "img/products/frenos_disco.png",
+            imagePath: "public/img/products/frenos_disco.png",
             mark: 'Wilwood',
             stock: 54,
             title: 'Frenos de Disco',
@@ -93,7 +93,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 960
         }),
         new Product({
-            imagePath: "img/products/frenos1.jpg",
+            imagePath: "public/img/products/frenos1.jpg",
             mark: 'BMW',
             stock: 23,
             title: 'Frenos Premium',
@@ -101,7 +101,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 999
         }),
         new Product({
-            imagePath: "img/products/calavera3.jpg",
+            imagePath: "public/img/products/calavera3.jpg",
             mark: 'Toyota',
             stock: 3,
             title: 'Calavera deportiva',
@@ -109,7 +109,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 640
         }),
         new Product({
-            imagePath: "img/products/lip1.jpg",
+            imagePath: "public/img/products/lip1.jpg",
             mark: 'Rare Race',
             stock: 150,
             title: 'Lip estetico',
@@ -117,7 +117,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 180
         }),
         new Product({
-            imagePath: "img/products/clutch1.jpg",
+            imagePath: "public/img/products/clutch1.jpg",
             mark: 'Super Clutch',
             stock: 2,
             title: 'Clutch de Titanio',
@@ -125,7 +125,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 600
         }),
         new Product({
-            imagePath: "img/products/motor1.jpg",
+            imagePath: "public/img/products/motor1.jpg",
             mark: 'Hyper Motors',
             stock: 1,
             title: 'Motor para MZ',
@@ -133,7 +133,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 7100
         }),
         new Product({
-            imagePath: "img/products/retrovisor1.jpg",
+            imagePath: "public/img/products/retrovisor1.jpg",
             mark: 'Auto Mirrors',
             stock: 55,
             title: 'Retrovisor electrocromico',
@@ -141,7 +141,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 865
         }),
         new Product({
-            imagePath: "img/products/rin1.jpg",
+            imagePath: "public/img/products/rin1.jpg",
             mark: 'MR',
             stock: 6,
             title: 'Rines 2 piezas',
@@ -149,7 +149,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 640
         }),
         new Product({
-            imagePath: "img/products/rin2.jpg",
+            imagePath: "public/img/products/rin2.jpg",
             mark: 'Classical Tires LX',
             stock: 8,
             title: 'Rines LX',
@@ -157,7 +157,7 @@ mongoose.connect(mongoURI, option).then(function () {
             price: 500
         }),
         new Product({
-            imagePath: "img/products/rin3.jpg",
+            imagePath: "public/img/products/rin3.jpg",
             mark: 'Rin Rin la Campana',
             stock: 3,
             title: 'Rin Ms Gris',

@@ -1,0 +1,17 @@
+<p></p>
+{{# each products}}
+    <div class="row">
+        {{# each this}}
+            <div class="col-lg-4 col-6 ">
+                <img class="img-thumbnail img-fluid"
+                     src="{{this.imagePath}}"
+                     alt="" >
+                <h4 class="titel">{{this.title}}</h4>
+                <p class="description">{{this.description}}</p>
+                <div class="price pull-left">${{this.price}}</div>
+                <a href="/products/add-to-cart/{{this.id}}" class="btn btn-success pull-right" role="button">Add to cart</a>
+                <p></p>
+            </div>
+        {{/ each}}
+    </div>
+{{/each}}

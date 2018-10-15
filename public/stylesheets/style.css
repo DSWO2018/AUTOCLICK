@@ -1,3 +1,13 @@
+.price{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.img-thumbnail{
+  width: inherit;
+  max-height: 200px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -110,19 +120,15 @@ img {
 
 }
 
-header {
-  background: #fdf9fe;
-  width: 100%;
-  height: 100px;
-  top: 20px;
-  left: 0;
-  bottom: 20px;
+img.logo{
+  width: 30px;
+  align: center;
 }
 
 header #logo img{
+  padding-top: 10px;
   width: 50px;
   align: center;
-  margin-bottom: 20px;
 }
 
 /* NAVIGATION*/
@@ -132,11 +138,6 @@ nav {
   float: bottom;
   text-align: center;
   padding: 2px 20px 2px 20px;
-}
-
-#menu-icon {
-  display: none;
-  font-size: 50px;
 }
 
 ul {
@@ -168,9 +169,8 @@ a:hover {
 
 }
 
-
 #slide-wrap{
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .one-third {
@@ -182,12 +182,16 @@ a:hover {
 
 .icon-wrap {
   margin: 0 auto;
-  width: 120px;
-  height: 120px;
+  width: 145px;
+  height: 130px;
   background-color: #6991ac;
   border-radius: 125px;
   text-align: center;
   margin-top: 3%;
+}
+
+#footer-content {
+  color: #fbf8ff;
 }
 
 .icon-wrap i {
@@ -230,8 +234,11 @@ footer {
   background: #000000;
   width: 100%;
   height: 200px;
+  bottom:0;
+  left:0;
   overflow: auto;
 }
+
 .icon-text {
   width: 100%;
   margin: 0 auto;
