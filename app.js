@@ -4,14 +4,26 @@ var MongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 var express = require('express');
 var path = require('path');
+var http = require ('http');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var expressHbs = require('express-handlebars');
 
+var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/autoclick';
+var theport =process.env.PORT || 7842;
+
 var app = express();
-mongoose.connect('mongodb://localhost:27017/autoclick', {useNewUrlParser: true});
+//mongoose.connect('mongodb://Ventas:ventas123@ds231723.mlab.com:31723/carritousuarios');
+MONGOLAB_URI = "mongodb://Ventas:ventas123@ds231723.mlab.com:31723/carritousuarios";
+mongoose.connect('mongodb://Ventas:ventas123@ds231723.mlab.com:31723/carritousuarios', { useNewUrlParser: true },function(err,res){
+    if(err){
+        console.log('Error connecting to: '+uristring+'. '+err);
+    }else{
+        console.log('Succeded connecting to: '+uristring)
+    }
+})
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 app.use(logger('dev'));
