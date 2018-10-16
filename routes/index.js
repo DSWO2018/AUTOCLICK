@@ -16,7 +16,7 @@ router.get('/login/', function(req, res, next) {
 });
 
 router.get('/login/singin/', function(req, res, next) {
-    res.render('user/singin', {layout:'layout-login.hbs'});
+    res.render('user/singin', {layout:'layout-singin.hbs'});
 });
 
 
