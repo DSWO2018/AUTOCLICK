@@ -4,14 +4,28 @@ var Product = require('../models/product');
 var Cart = require('../models/cart');
 var path    = require("path");
 
+
+//
 router.get('/', function(req, res, next) {
     res.render('shop/index', { title: 'AUTOCLICK' });
 });
+//
 
+<<<<<<< HEAD
 router.get('/signin/', function(req, res, next) {
   //  res.sendFile(path.join(path.dirname(__dirname)+'//public/login.html'));
     res.render('user/signin');
 }); 
+=======
+router.get('/login/', function(req, res, next) {
+   res.render('user/login', {layout:'layout-login.hbs'});
+});
+
+router.get('/login/singin/', function(req, res, next) {
+    res.render('user/singin', {layout:'layout-singin.hbs'});
+});
+>>>>>>> bdb86b829bd309728056d71a8d584f958183f146
+
 
 router.get('/products', function (req, res, next) {
     Product.find(function (err, docs) {
