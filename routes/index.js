@@ -7,11 +7,11 @@ var path    = require("path");
 router.get('/', function(req, res, next) {
     res.render('shop/index', { title: 'AUTOCLICK' });
 });
-/**
+
 router.get('/signin/', function(req, res, next) {
   //  res.sendFile(path.join(path.dirname(__dirname)+'//public/login.html'));
     res.render('user/signin');
-}); */
+}); 
 
 router.get('/products', function (req, res, next) {
     Product.find(function (err, docs) {

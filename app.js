@@ -17,7 +17,7 @@ var theport =process.env.PORT || 7842;
 var app = express();
 //mongoose.connect('mongodb://Ventas:ventas123@ds231723.mlab.com:31723/carritousuarios');
 MONGOLAB_URI = "mongodb://Ventas:ventas123@ds231723.mlab.com:31723/carritousuarios";
-mongoose.connect('mongodb://Ventas:ventas123@ds231723.mlab.com:31723/carritousuarios', { useNewUrlParser: true },function(err,res){
+mongoose.connect('mongodb://user:admin123@ds231723.mlab.com:31723/carritousuarios', { useNewUrlParser: true },function(err,res){
     if(err){
         console.log('Error connecting to: '+uristring+'. '+err);
     }else{
